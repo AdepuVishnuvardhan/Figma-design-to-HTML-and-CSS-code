@@ -1,0 +1,156 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+/* Header Section */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+  background: #007bff;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 3em;
+}
+
+#hero button {
+  background-color: #ff7f00;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#hero button:hover {
+  background-color: #e67300;
+}
+
+/* Features Section */
+#features {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.feature {
+  text-align: center;
+  width: 30%;
+}
+
+.feature h2 {
+  margin-bottom: 20px;
+}
+
+/* Contact Section */
+#contact {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact input, #contact textarea {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+#contact button {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  #hero h1 {
+    font-size: 2em;
+  }
+
+  #features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+}
